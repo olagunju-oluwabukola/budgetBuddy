@@ -1,23 +1,23 @@
 <template>
   <section
-    class="relative flex flex-col md:flex-row items-center justify-between h-screen px-6 md:px-20 bg-[#F9F9F9]"
+    class="relative flex flex-col md:flex-row items-center justify-between md:h-screen px-6 md:px-20 py-12 md:py-0 bg-[#F9F9F9]"
   >
-    <div class="max-w-2xl text-center md:text-left">
+    <div class="md:max-w-2xl md:text-left">
       <h1 class="text-4xl md:text-6xl font-bold text-[#2A7A7A]">
         Master Your Money with Budget Buddy
       </h1>
-      <p ref="typingText" class="text-2xl md:text-4xl text-gray-600 font-medium mt-4"></p>
+      <p ref="typingText" class="text-xl md:text-4xl text-gray-600 font-medium mt-4"></p>
 
       <div class="mt-6 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
         <RouterLink
           to="/signup"
-          class="px-6 py-3 bg-[#A3E635] text-white font-semibold rounded-lg shadow-md hover:bg-[#8ECF2F] transition"
+          class="px-6 py-3 bg-[#A3E635] text-white text-center font-semibold rounded-lg shadow-md hover:bg-[#8ECF2F] transition"
         >
           Get Started Free
         </RouterLink>
         <RouterLink
           to="/"
-          class="px-6 py-3 border-2 border-[#2A7A7A] text-[#2A7A7A] font-semibold rounded-lg shadow-md hover:bg-[#2A7A7A] hover:text-white transition"
+          class="px-6 py-3 text-center border-2 border-[#2A7A7A] text-[#2A7A7A] font-semibold rounded-lg shadow-md hover:bg-[#2A7A7A] hover:text-white transition"
         >
           See How It Works
         </RouterLink>

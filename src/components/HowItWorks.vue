@@ -42,6 +42,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const steps = [
   {
@@ -68,6 +71,7 @@ const stepNumbers = ref([])
 const stepContents = ref([])
 
 onMounted(() => {
+  // Animate the vertical line
   gsap.from(verticalLine.value, {
     scaleY: 0,
     duration: 1,
@@ -75,6 +79,8 @@ onMounted(() => {
     scrollTrigger: {
       trigger: howItWorksSection.value,
       start: 'top 80%',
+      end: 'bottom 20%',
+      toggleActions: 'play none none none',
     },
   })
 
@@ -87,6 +93,8 @@ onMounted(() => {
       scrollTrigger: {
         trigger: number,
         start: 'top 80%',
+        end: 'bottom 20%',
+        toggleActions: 'play none none none',
       },
     })
   })
@@ -100,6 +108,8 @@ onMounted(() => {
       scrollTrigger: {
         trigger: content,
         start: 'top 80%',
+        end: 'bottom 20%',
+        toggleActions: 'play none none none',
       },
     })
   })
