@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="flex h-screen">
     <aside class="w-64 bg-[#2A7A7A] text-white p-4">
       <ProfileCard />
@@ -26,4 +26,19 @@
 <script setup>
 import ProfileCard from '@/components/ProfileCard.vue'
 import PieChart from '@/components/Piechart.vue'
+</script> -->
+
+<template>
+  <div>
+    <h1>Finance Dashboard</h1>
+    <ExpenseTracker />
+    <SavingsGoal />
+    <SpendingChart />
+  </div>
+</template>
+
+<script setup>
+import ExpenseTracker from '@/components/ExpenseTracker.vue'
+import SavingsGoal from '@/components/SavingsGoal.vue'
+import SpendingChart from '@/components/SpendingChart.vue'
 </script>

@@ -63,30 +63,6 @@ const features = [
     additional: '90% users improve spending habits.',
   },
   {
-    icon: Smartphone,
-    title: 'Sync Across Devices',
-    description: 'Access your budget anytime, anywhere, on all your devices.',
-    additional: '24/7 access, no interruptions.',
-  },
-  {
-    icon: Shield,
-    title: 'Bank-Level Security',
-    description: 'Your data is protected with top-tier encryption.',
-    additional: 'Learn More',
-  },
-  {
-    icon: Bell,
-    title: 'Smart Alerts',
-    description: 'Get notified about unusual spending or bill due dates.',
-    additional: 'Learn More',
-  },
-  {
-    icon: TrendingUp,
-    title: 'Investment Tracking',
-    description: 'Monitor your investments alongside your budget.',
-    additional: 'Learn More',
-  },
-  {
     icon: CreditCard,
     title: 'Debt Management',
     description: 'Plan and track your debt repayment strategies.',
