@@ -1,16 +1,16 @@
 <template>
   <div>
-    <div v-for="(item, index) in spending" :key="index" class="mb-2">
+    <div v-for="(item, index) in spending" :key="index" class="mb-3 md:mb-5">
       <div class="flex justify-between">
-        <span>{{ item.category }}</span>
-        <span :class="item.amount > 0 ? 'text-green-500' : 'text-red-500'"
+        <span class="text-[12px]">{{ item.category }}</span>
+        <span :class="item.amount > 0 ? 'text-green-500 text-[12px]' : 'text-red-500 text-[12px]'"
           >₦ {{ item.amount }}</span
         >
       </div>
-      <div class="w-full bg-gray-200 h-2 rounded-md mt-1">
+      <div class="w-full bg-gray-200 h-2 md:h-2 lg:h-3 rounded-md mt-1">
         <div
           :class="item.color"
-          class="h-2 rounded-md"
+          class="h-2 md:h-2 lg:h-3 rounded-md"
           :style="{ width: item.percentage + '%' }"
         ></div>
       </div>

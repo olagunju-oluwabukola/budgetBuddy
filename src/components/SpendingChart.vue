@@ -21,11 +21,11 @@ const props = defineProps({
   },
   backgroundColor: {
     type: String,
-    default: 'rgba(99, 102, 241, 0.2)',
+    default: '#2A7A7A',
   },
   borderColor: {
     type: String,
-    default: 'rgba(99, 102, 241, 1)',
+    default: '#2A7A7A',
   },
 })
 

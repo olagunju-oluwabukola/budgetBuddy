@@ -20,13 +20,10 @@
 <script setup>
 const menuItems = [
   { name: 'Budget & Analytics' },
-  { name: 'Cards' },
   { name: 'Payments' },
-  { name: 'Loans' },
   { name: 'Save & Invest' },
   { name: 'Bills & Utility' },
   { name: 'Accounts' },
   { name: 'Settings' },
-  { name: 'Logout' },
 ]
 </script>
