@@ -1,7 +1,9 @@
 <template>
   <div class="relative h-screen flex items-center justify-center bg-gray-100">
     <div class="relative z-10 w-full max-w-2xl bg-white p-10 rounded-lg shadow-2xl">
-      <h2 class="text-4xl font-bold text-gray-900 mb-6 text-center">Create an Account</h2>
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 text-center">
+        Create an Account
+      </h2>
 
       <form @submit.prevent="handleSignup">
         <div class="mb-4">
@@ -9,7 +11,7 @@
           <input
             v-model="fullName"
             type="text"
-            class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#2A7A7A]"
+            class="w-full h-10 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2A7A7A]"
             required
           />
         </div>
@@ -19,7 +21,7 @@
           <input
             v-model="email"
             type="email"
-            class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#2A7A7A]"
+            class="w-full h-10 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2A7A7A]"
             required
           />
         </div>
@@ -29,14 +31,14 @@
           <input
             v-model="password"
             type="password"
-            class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#2A7A7A]"
+            class="w-full h-10 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2A7A7A]"
             required
           />
         </div>
 
         <button
           type="submit"
-          class="w-full bg-[#2A7A7A] text-white py-3 rounded-md font-semibold text-lg transition"
+          class="w-full bg-[#2A7A7A] text-white py-3 rounded-lg font-semibold text-lg transition"
           :disabled="loading"
         >
           <span v-if="loading">Signing Up...</span>
@@ -73,17 +75,16 @@ const handleSignup = async () => {
   loading.value = true
 
   try {
-
     const userCredential = await createUserWithEmailAndPassword(auth, email.value, password.value)
     const user = userCredential.user
     await updateProfile(user, {
-      displayName: fullName.value
+      displayName: fullName.value,
     })
 
     await setDoc(doc(db, 'users', user.uid), {
       fullName: fullName.value,
       email: email.value,
-      createdAt: new Date()
+      createdAt: new Date(),
     })
 
     toast.success('Account created successfully! Redirecting...')

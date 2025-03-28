@@ -17,8 +17,8 @@
             >
               <component :is="feature.icon" class="md:w-8 md:h-8 text-white" />
             </div>
-            <h3 class="text-xl font-semibold mb-4">{{ feature.title }}</h3>
-            <p class="text-[#666] mb-4">{{ feature.description }}</p>
+            <h3 class="text-md md:text-xl font-semibold mb-4">{{ feature.title }}</h3>
+            <p class="text-[#666] mb-4 text-sm">{{ feature.description }}</p>
           </div>
         </div>
       </div>

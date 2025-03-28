@@ -7,10 +7,10 @@
           >₦ {{ item.amount }}</span
         >
       </div>
-      <div class="w-full bg-gray-200 h-2 md:h-2 lg:h-3 rounded-md mt-1">
+      <div class="w-full bg-gray-200 h-2 md:h-3 lg:h-3 rounded-md mt-1">
         <div
           :class="item.color"
-          class="h-2 md:h-2 lg:h-3 rounded-md"
+          class="h-2 md:h-3 lg:h-3 rounded-md"
           :style="{ width: item.percentage + '%' }"
         ></div>
       </div>

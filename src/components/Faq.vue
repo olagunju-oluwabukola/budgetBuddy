@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 bg-white">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-[#2A7A7A] text-center mb-12">
+      <h2 class="text-2xl md:text-4xl font-bold text-[#2A7A7A] text-center mb-12">
         Frequently Asked Questions
       </h2>
       <div class="max-w-2xl mx-auto">
@@ -10,11 +10,11 @@
             @click="toggleFAQ(index)"
             class="w-full text-left flex justify-between items-center py-4"
           >
-            <h3 class="text-xl font-semibold">{{ faq.question }}</h3>
+            <h3 class="text-md md:text-xl font-semibold">{{ faq.question }}</h3>
             <component :is="activeIndex === index ? Minus : Plus" class="w-6 h-6 text-[#2A7A7A]" />
           </button>
 
-          <p v-if="activeIndex === index" class="mt-2 text-[#666] pb-4">
+          <p v-if="activeIndex === index" class="mt-2 text-[#666] pb-4 text-sm md:text-md">
             {{ faq.answer }}
           </p>
         </div>

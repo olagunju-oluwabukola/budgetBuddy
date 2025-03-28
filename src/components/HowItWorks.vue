@@ -1,7 +1,9 @@
 <template>
   <section ref="howItWorksSection" class="py-20 bg-[#F9F9F9]">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-[#2A7A7A] text-center mb-12">How Budget Buddy Works</h2>
+      <h2 class="text-2xl md:text-3xl font-bold text-[#2A7A7A] text-center mb-12">
+        How Budget Buddy Works
+      </h2>
       <div class="flex flex-col items-center relative">
         <div
           ref="verticalLine"
@@ -29,8 +31,8 @@
             <div
               class="md:p-6 p-4 bg-white rounded-lg border border-[#E0E0E0] hover:border-[#2A7A7A] transition-all duration-300"
             >
-              <h3 class="text-lg md:text-xl font-semibold mb-4">{{ step.title }}</h3>
-              <p class="text-[#666] text-sm md:text-lg">{{ step.description }}</p>
+              <h3 class="text-sm md:text-xl font-semibold mb-4">{{ step.title }}</h3>
+              <p class="text-[#666] text-[12px] md:text-lg">{{ step.description }}</p>
             </div>
           </div>
         </div>
