@@ -25,7 +25,7 @@
     </div>
 
     <div class="hidden md:block w-1/2">
-      <img src="/bank.png" alt="Budgeting Illustration" class="w-full h-auto" />
+      <img src="" alt="Budgeting Illustration" class="w-full h-auto" />
     </div>
   </section>
 </template>

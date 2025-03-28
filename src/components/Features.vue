@@ -30,16 +30,7 @@
 import { ref, onMounted } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import {
-  Wallet,
-  Goal,
-  PieChart,
-  Smartphone,
-  Shield,
-  Bell,
-  TrendingUp,
-  CreditCard,
-} from 'lucide-vue-next'
+import { Wallet, Goal, PieChart, CreditCard } from 'lucide-vue-next'
 
 gsap.registerPlugin(ScrollTrigger)
 
